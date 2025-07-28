@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "74554aeb-52e2-43c7-bb78-63e67d29e0d0",
+		"name": "NODEMAILER EXAMPLE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18905481",
+		"_collection_link": "https://warped-robot-868014.postman.co/workspace/MINJUSDH~af5c00f1-1443-4e7a-be1a-48296d2855f8/collection/18905481-74554aeb-52e2-43c7-bb78-63e67d29e0d0?action=share&source=collection_link&creator=18905481"
+	},
+	"item": [
+		{
+			"name": "SEND MAIL LANDING",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subject\": \"Asunto dinámico\",\r\n  \"text\": \"Texto plano opcional\",\r\n  \"html\": \"<b>HTML opcional</b>\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/mail/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"mail",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
