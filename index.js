@@ -38,7 +38,7 @@ app.post('/api/v1/mail/send', async (req, res) => {
     let toAddress = process.env.TO_ADDRESS;
 
     const info = await transporter.sendMail({
-      from: `"Test" <${process.env.SMTP_USER}>`,
+      from: `"${process.env.FROM_USER_NAME}" <${process.env.SMTP_USER}>`,
       to: toAddress,
       subject,
       text,
